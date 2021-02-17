@@ -1,4 +1,5 @@
 title: Satish Umagol Portfolio
+tagline: Hi, I am Satish Umagol Full Stack Developer & Freelancer
 description: I am Satish Umagol, full stack developer. I am from Pune (Maharashtra). Currently working as Mean Stack developer in Bharati Robotics System Pvt. Ltd. Before this i was working as web developer in Voidstarindia Pvt Ltd. I have published one Angular Library(Package) Ang Storage on npm. I have good knowledge of  Laravel, Jquery, Javascript and Ajax. I have created more than 5 websites using Angular as front-end and nodejs as backend. I can create any type of websites according to the requirements with full customization. Develop Mobile App in Ionic using Ionic as Front-end and nodejs as backend. I have done my BSC (Computer Science) from Pune University. Currently persuing my MSC(Computer Science ) from Pune University.
 
 url: "https://umagol.github.io/"
@@ -7,6 +8,21 @@ author:
   email: "umagol97@gmail.com"
   url: "https://satishumagol.io/"
 
+twitter:
+  username: @UmagolSatish
+
+social:
+  name: Satish Umagol
+  links:
+    - https://twitter.com/umagolsatish
+    - https://www.facebook.com/people/Satish-Umagol/100008101153266
+    - https://in.linkedin.com/in/satish-umagol-73b623172
+    - https://github.com/umagol
+    - https://www.npmjs.com/~satishumagol
+
+locale: en_US
+
+image: /assets/img/favcon.jpg
 # Build settings
 baseurl: /umagol.github.io # Change this to your relative path (ex: /blog), or leave just a /
 markdown: kramdown
