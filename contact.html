@@ -160,8 +160,9 @@
                 <div class="box-info-contact">
                   <h3>Start a new project?</h3>
                   <h5>Visit my office</h5>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit vo
-                    luptatem accusantium natus error sit omnis iste natus</p>
+                  <p>
+                    <span>Address:</span> Kothrud Depot, Pune, Maharashtra, India
+                  </p>
 
                   <ul>
                     <li>
@@ -170,11 +171,11 @@
                     </li>
                     <li>
                       <span>Email</span>
-                      <a href="mailto:info@devrevel.com">umagol97@gmail.com</a>
+                      <a href="mailto:umagol97@gmail.com">umagol97@gmail.com</a>
                     </li>
                     <li>
-                      <span>Address</span>
-                      <a href="#">Kothurd depot, Pune, Maharashtra, India</a>
+                      <span>skype:</span>
+                      <a href="#">Satish Umagol</a>
                     </li>
                   </ul>
                 </div>
@@ -183,8 +184,10 @@
               <div class="col-lg-6">
                 <div class="form-box">
                   <h3>Write A Comment</h3>
-                  <form id="contact-form" class="form" method="post" action="" data-toggle="validator">
-                    <div class="messages"></div>
+                  <form id="contact-form" class="form" action="https://api.staticforms.xyz/submit" method="post"  data-toggle="validator">
+                    <div id="form-status" class="messages form-success-message"></div>
+                    <br/>
+                    <br/>
                     <div class="input__wrap controls">
                       <div class="form-group">
 
@@ -214,9 +217,13 @@
                         </div>
                         <div class="help-block with-errors"></div>
                       </div>
+                      <input type="hidden" name="subject" value="Contact us from - umagol.github.io" />
+                      <input type="hidden" name="replyTo" value="@">
+                      <input type="hidden" name="accessKey" value="a133a191-e7e3-4962-a222-98c80780d3d5">
+                      <input type="hidden" name="redirectTo" value="https://umagol.github.io/contact?status=success">
 
                       <div class="image-zoom" data-dsn="parallax">
-                        <button>Send Message</button>
+                        <button type="submit">Send Message</button>
                       </div>
                     </div>
                   </form>
@@ -293,7 +300,18 @@
   <script src="assets/js/dsn-grid.js"></script>
 
   <script src="assets/js/custom.js"></script>
-
+  <script>
+      $(document).ready(function() {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+            if (params && params.status === "success") {
+              document.getElementById("form-status").style.display = "block";
+                document.getElementById("form-status").innerHTML = "<span>Form Submitted Successfully!!</span>"
+            } else {
+                document.getElementById("form-status").style.display = "none"
+            }
+        });
+  </script>
 </body>
 
 
