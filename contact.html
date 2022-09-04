@@ -62,7 +62,10 @@
 </head>
 
 <body class=" hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
-
+  <audio id="audio"  webkit-playsinline="true" playsinline="true" autoplay="true" style="display: none;" >
+    <source src="assets/audio/index.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
   <div class="preloader">
     <div class="preloader-after"></div>
@@ -409,6 +412,26 @@
                 document.getElementById("form-status").style.display = "none"
             }
         });
+  </script>
+    <script> 
+      $(function(){
+        $("#footer").load("layout/footer.md"); 
+      });
+      function playMusic(){
+          document.getElementById("audio").play();
+          var play = document.getElementById("play");
+          var pause = document.getElementById("pause");
+          play.style.display = "none";
+          pause.style.display = "block";
+
+      }
+      function pauseMusic(){
+          document.getElementById("audio").pause();
+          var play = document.getElementById("play");
+          var pause = document.getElementById("pause");
+          play.style.display = "block";
+          pause.style.display = "none";
+      }
   </script>
 </body>
 
