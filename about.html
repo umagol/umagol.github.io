@@ -2,32 +2,30 @@
 <html lang="en-US">
 
 
-<!-- Mirrored from theme.dsngrid.com/droow/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Dec 2021 07:15:44 GMT -->
 <head>
-
-     
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="DC.title" content="Satish Umagol Portfolio" >
-    <meta property="og:title" content="Satish Umagol Portfolio">
-    <meta property="og:image" content="assets/img/favcon.jpg">
+    <meta name="DC.title" content="Satish Umagol | About Me">
 
-    <meta name="keywords" content="satish umagol portfolio, satish umagol,Satish Umagol,satishumagol,full stack developer, , umagol github ,github.com/umagol , "/>
-    <meta name="description" title="Satish Umagol" content="Hello,
-    I am Satish Umagol, full stack developer. I am from Pune (Maharashtra).
-    Currently working as Mean Stack developer in Bharati Robotics System Pvt. Ltd. Before this i was working as web developer in Voidstarindia Pvt Ltd. 
-    I have published one Angular Library(Package) Ang Storage on npm. I have good knowledge of 
-    Laravel, Jquery, Javascript and Ajax. I have created more than 5 websites using Angular as front-end and nodejs as backend. I can create any type of websites according to the requirements with full 
-    customization.
-    Develop Mobile App in Ionic using Ionic as Front-end and nodejs as backend. 
-    
-    I have done my BSC (Computer Science) from Pune University. Currently persuing my MSC(Computer Science ) from Pune University."/>
-    <meta name="subject" content="Satish Umagol Portfolio" />
-    <meta name="copyright"content="Satish Umagol " />
+    <meta property="og:title" content="Satish Umagol | About Me ">
+    <meta property="og:image" content="assets/img/ogImage.png">
+    <meta property="og:description"
+        content="I am a Full Stack Developer with 2+ years of experience in developing web applications.">
+    <meta property="og:site_name" content="Satish Umagol | About Me">
+    <meta property="og:url" content="https://umagol.github.io/about">
+    <meta property="og:type " content="About">
+    <meta name="keywords"
+        content="satish umagol,About, about me , ABOUT, satish umagol,Satish Umagol,satishumagol,Kothrud web developer ,pune web developer , kothrud depo web developer ,full stack developer, umagol,rupali umagol,ganesh umagol,santosh umagol, umagol github ,github.com/umagol , " />
+    <meta name="description" title="Satish Umagol | About Me" content="I am a Full Stack Developer. I am passionate about my work.
+        Because I love what I do, I have a steady source of motivation that drives me to do my best. I’m currently employed as a full stack developer at Cyberium Inc.
+        I’m hands-on in all stages of the programming cycle, from planning and design to testing and deployment.
+       " />
+    <meta name="subject" content="Satish Umagol | About" />
+    <meta name="copyright" content="Satish Umagol " />
     <meta name="language" content="En" />
     <meta name="robots" content="index,follow" />
-    <meta name=”news_keywords” content="Satish Umagol" />
+    <meta name=”news_keywords” content="Satish Umagol, satish umagol, About" />
     <meta name="googlebot" content="noodp" />
     <meta name="revised" content="Friday, January 01th, 2021, 12:00 am" />
     <meta name="abstract" content="">
@@ -39,8 +37,8 @@
     <meta name="copyright" content="Satish Umagol">
     <meta name="reply-to" content="umagol97@gmail.com">
     <meta name="owner" content="Satish Umagol">
-    <meta name="url" content="http://www.websiteaddrress.com">
-    <meta name="identifier-URL" content="http://www.websiteaddress.com">
+    <meta name="url" content="https://umagol.github.io/">
+    <meta name="identifier-URL" content="https://umagol.github.io/">
     <meta name="directory" content="submission">
     <meta name="category" content=" Business Developer DEVELOPMENT Full-Stack web developer Portfolio ">
     <meta name="coverage" content="Worldwide">
@@ -49,11 +47,13 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
 
-     <!--  Title -->
-    <title>Satish Umagol - About Me | Portfolio</title>
+
+    <!--  Title -->
+    <title>Satish Umagol | About Me.</title>
 
     <!-- Font Google -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
@@ -62,11 +62,13 @@
     <!-- custom styles (optional) -->
     <link href="assets/css/plugins.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
-<!-- End Google Analytics -->
 </head>
 
 <body class="hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
-
+    <audio id="audio"  webkit-playsinline="true" playsinline="true" autoplay="true" style="display: none;" >
+        <source src="assets/audio/index.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
     <div class="preloader">
         <div class="preloader-after"></div>
         <div class="preloader-before"></div>
@@ -82,11 +84,23 @@
 
     <!-- Nav Bar -->
     <div class="dsn-nav-bar">
+        <!-- Audio Control -->
+        <div style="position: fixed; bottom: 0; right: 0; cursor: pointer;">
+            <!-- Audio  -->
+            <a id="play" class="image-zoom effect-ajax" data-dsn-ajax="slider" data-dsn="parallax"
+                style="padding-right: 40px;padding-bottom: 40px; display: none;" onclick="playMusic()">
+                Play
+            </a>
+            <a id="pause" class="effect-ajax" data-dsn-ajax="slider"
+                style="padding-right: 40px;padding-bottom: 40px; display: block;" onclick="pauseMusic()">
+                Pause
+            </a>
+        </div>
         <div class="site-header">
             <div class="extend-container">
                 <div class="inner-header">
                     <div class="main-logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img class="dark-logo" src="assets/img/logo-dark.png" alt="" />
                             <img class="light-logo" src="assets/img/logo.png" alt="" />
                         </a>
@@ -94,35 +108,11 @@
                 </div>
                 <nav class=" accent-menu main-navigation">
                     <ul class="extend-container">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./slider2.html">Slider</a>
-                        </li>
-                        <li>
-                          <a href="./work.html">Portfolio</a>
-                        </li>
-                        <li class="custom-drop-down">
-                            <a href="work.html">Work</a>
-                            <ul>
-                              <li><a href="project-9.html">AngStorage</a></li>
-                              <li><a href="project-4.html">StudLog</a></li>
-                              <li><a href="project-3.html">FoodMood</a></li>
-                              <li><a href="project-8.html">Web Stack</a></li>
-                              <li><a href="project-2.html">Ecoms</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        
-                        <!-- <li class="custom-drop-down">
-                            <a href="#">Blog</a>
-                            <ul>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="post.html">Single Post</a></li>
-                            </ul>
-                        </li> -->
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                        <li><a href="/designs">Designs</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -161,9 +151,9 @@
                 <div class="nav-content">
                     <div class="inner-content">
                         <address class="v-middle">
-                            <span> People don't care about what you say,</span>
-                            <span> they care about what you build</span>
-                            <span> - Mark Zuckerberg</span>
+                            <span>Kothrud Depot , Pune</span>
+                            <span>Maharashtra, India</span>
+                            <span>411038</span>
                         </address>
                     </div>
 
@@ -176,25 +166,52 @@
     <main class="main-root">
         <div id="dsn-scrollbar">
             <header>
+                <div class="headefr-fexid headefr-fexid-onepage" data-dsn-header="project">
+                    <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
+                        <div class=" " data-dsn="video" data-overlay="4">
+                            <video class="bg-image cover-bg dsn-video" poster="assets/img/video-bg.png" autoplay loop
+                                muted playsinline>
+                                <source src="assets/video/about.webm" type="video/mp4">
+                                Sorry..
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="project-page__inner">
+                        <div class="h-100">
+                            <div class="row justify-content-center align-items-center h-100">
+                                <div class="project-title" id="dsn-hero-parallax-title">
+                                    <div class="sub-text-header">
+                                        <h5>
+                                            let's see
+                                        </h5>
+                                    </div>
+
+                                    <div class="title-text-header">
+                                        <span class="title-text-header-inner">
+                                            <span>
+                                                A little about me
+                                            </span>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <header>
                 <div class="header-hero header-hero-2 ">
                     <div class="container h-100">
                         <div class="row align-items-center h-100">
                             <div class="col-lg-12">
                                 <div class="contenet-hero">
-                                    <h1><a> ABOUT ME AND MY WORK </a></h1>
-                                    <p>
-                                        Hello,<br>
-I am Satish Umagol, full stack developer. I am from Pune (Maharashtra).
-Currently working as Mean Stack developer in Bharati Robotics System Pvt. Ltd. 
-Before this i was working as web developer in Voidstarindia LLP. 
-I have published one Angular Library(Package) Ang Storage on npm. I have good knowledge of 
-Laravel, Jquery, Javascript and Ajax. I have created more than 5 websites using Angular as front-end and nodejs as backend. I can create any type of websites according to the requirements with full 
-customization.
-Develop Mobile App in Ionic using Ionic as Front-end and nodejs as backend. 
-
-I have done my BSC (Computer Science) from Pune University. Currently persuing my MSC(Computer Science ) from Pune University.
-
-                                    </p>
+                                    <h1>ABOUT ME AND MY Achievements</h1>
+                                    <p>I am a Full Stack Developer with robust problem-solving skills and proven
+                                        experience in
+                                        creating and designing software and web apps in a test-driven environment..</p>
                                     <a href="#" class="view-case scroll-down scroll-to">Scroll Down <img
                                             src="assets/img/arrow-right-wight.png" alt=""></a>
                                 </div>
@@ -212,9 +229,12 @@ I have done my BSC (Computer Science) from Pune University. Currently persuing m
                                 <img src="assets/img/pexels.jpg" alt="" data-dsn-y="30%" data-dsn-scale="1">
                             </div>
                             <div class="pro-text">
-                                <h3 data-dsn-animate="up">Hello I am , <br> Satish Umagol.</h3>
+                                <h3 data-dsn-animate="up">Hello, I am <br> Full Stack Developer.</h3>
                                 <p data-dsn-animate="up">
-                                  <!-- I am ready to work  -->
+                                    I am passionate about my work. Because I love what I do, I have a steady source of
+                                    motivation that drives me to do my best. I’m currently employed as a full-stack
+                                    developer at 🏢 Cyberium Inc. I’m hands-on in all stages of the programming cycle,
+                                    from planning and design to testing and deployment.
                                 </p>
                             </div>
                         </div>
@@ -248,7 +268,7 @@ I have done my BSC (Computer Science) from Pune University. Currently persuing m
                             </div>
                         </div>
                     </section>
-
+                    <!-- TODO: in future add skills here  -->
                     <!-- <section class="our-services section-margin">
                         <div class="container">
                             <div class="one-title" data-dsn-animate="up">
@@ -302,70 +322,183 @@ I have done my BSC (Computer Science) from Pune University. Currently persuing m
                         </div>
                     </section> -->
 
-                    <!-- <section class="our-team section-margin section-padding">
+
+
+                    <section class="brand-client section-margin">
                         <div class="container">
                             <div class="one-title" data-dsn-animate="up">
                                 <div class="title-sub-container">
-                                    <p class="title-sub">our team</p>
+                                    <p class="title-sub">Education</p>
                                 </div>
-                                <h2 class="title-main">The best team ever!</h2>
+                                <h2 class="title-main">My Knowledge Providers.</h2>
                             </div>
 
-                            <div class="custom-container">
-                                <div class="slick-slider">
-                                    <div class="team-item slick-slide">
-                                        <div class="box-img">
-                                            <img src="assets/img/team/1.png" alt="">
-                                        </div>
+                            <div class="wapper-client">
+                                <div class="logo-box">
+                                    <img src="assets/img/logo/PDEA.png" alt="" width="100">
 
-                                        <div class="box-content">
-                                            <h4>Blake Hamilton</h4>
-                                            <p>Project manager</p>
-                                        </div>
-                                    </div>
+                                    <div class="info">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
 
-                                    <div class="team-item slick-slide">
-                                        <div class="box-img">
-                                            <img src="assets/img/team/2.png" alt="">
-                                        </div>
-
-                                        <div class="box-content">
-                                            <h4>Ahmed Shawky</h4>
-                                            <p>Web Designer</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="team-item slick-slide">
-                                        <div class="box-img">
-                                            <img src="assets/img/team/3.png" alt="">
-                                        </div>
-
-                                        <div class="box-content">
-                                            <h4>John Doe</h4>
-                                            <p>Engineer</p>
+                                            <div class="entry">
+                                                <div>
+                                                    <h5>Mamasaheb Mohol College</h5>
+                                                    <a
+                                                        href="http://www.pdeamoholcollege.edu.in/">pdeamoholcollege.edu.in</a>
+                                                    <br />
+                                                    <br />
+                                                    <p class="text-white"> Higher Secondary Education</b></p>
+                                                    <p class="text-white">Jul. 2015 to Nov. 2017</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="team-item slick-slide">
-                                        <div class="box-img">
-                                            <img src="assets/img/team/4.png" alt="">
+                                <div class="logo-box">
+                                    <img src="https://www.spcollegepune.ac.in/images/logo.png" alt="">
+
+                                    <div class="info">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+
+                                            <div class="entry">
+                                                <div>
+                                                    <h5>Sir Parashurambhau College</h5>
+                                                    <a href="https://www.spcollegepune.ac.in/">spcollegepune.ac.in/</a>
+                                                    <br />
+                                                    <br />
+                                                    <p class="text-white">Bachelor of Science<b> (Computer Science) </b>
+                                                    </p>
+                                                    <p class="text-white">Nov. 2017 to Sep. 2020</p>
+                                                </div>
+                                            </div>
                                         </div>
+                                    </div>
+                                </div>
 
-                                        <div class="box-content">
-                                            <h4>Hesham Megahed</h4>
-                                            <p>Founder</p>
+                                <div class="logo-box">
+                                    <img src="assets/img/logo/PDEA.png" alt="" width="100">
+
+                                    <div class="info">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+
+                                            <div class="entry">
+                                                <div>
+                                                    <h5>Mamasaheb Mohol College</h5>
+                                                    <a
+                                                        href="http://www.pdeamoholcollege.edu.in/">pdeamoholcollege.edu.in</a>
+                                                    <br />
+                                                    <br />
+                                                    <p class="text-white">Master of Science<b> (Computer Science)</b>
+                                                    </p>
+                                                    <p class="text-white">Jul. 2020 to Nov. 2022</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section> -->
+                    </section>
 
+
+                    <section class="brand-client section-margin">
+                        <div class="container">
+                            <div class="one-title" data-dsn-animate="up">
+                                <div class="title-sub-container">
+                                    <p class="title-sub">My Experience</p>
+                                </div>
+                                <h2 class="title-main">My Experience Providers.</h2>
+                            </div>
+
+                            <div class="wapper-client">
+                                <div class="logo-box">
+                                    <img src="http://voidstarindia.com/images/logo.svg" alt="" width="100">
+
+                                    <div class="info">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+
+                                            <div class="entry">
+                                                <div>
+                                                    <h5>VoidStarIndia Solutions LLP</h5>
+                                                    <a href="http://voidstarindia.com/">voidstarindia.com</a>
+                                                    <br />
+                                                    <br />
+                                                    <p class="text-white">Working as a<b> Web Developer Intern</b></p>
+                                                    <p class="text-white">Jul. 2020 to Nov. 2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="logo-box">
+                                    <img src="assets/img/logo/brs_logo.png" alt="">
+
+                                    <div class="info">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+
+                                            <div class="entry">
+                                                <div>
+                                                    <h5>Bharati Robotic Systems Pvt Ltd</h5>
+                                                    <a href="https://www.brsindia.com/">www.brsindia.com</a>
+                                                    <br />
+                                                    <br />
+                                                    <p class="text-white">Working as a<b> Software Developer</b></p>
+                                                    <p class="text-white">Nov. 2020 to Sep. 2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="logo-box">
+                                    <img src="https://www.cyberium.info/wp-content/uploads/2022/08/logo2_blue.png"
+                                        alt="">
+
+                                    <div class="info">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+
+                                            <div class="entry">
+                                                <div>
+                                                    <h5>Cyberium Infotech Pvt. Ltd.</h5>
+                                                    <a href="https://www.cyberium.info/">www.cyberium.info</a>
+                                                    <br />
+                                                    <br />
+                                                    <p class="text-white">Working as a <b> Analyst | Full-Stack
+                                                            Developer</b></p>
+                                                    <p class="text-white">Sep 2021. to Current</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <section class="our-client section-margin">
                         <div class="container">
                             <div class="one-title" data-dsn-animate="up">
                                 <div class="title-sub-container">
-                                    <p class="title-sub"> Client see</p>
+                                    <p class="title-sub"> Recommendations</p>
                                 </div>
                                 <h2 class="title-main">Feedback from My Team.</h2>
                             </div>
@@ -375,7 +508,8 @@ I have done my BSC (Computer Science) from Pune University. Currently persuing m
                                     <div>
                                         <p>
                                             "I've worked with Satish on VSIEDU project at VoidStarIndia Solutions LLP.
-                                            He has the ability to grasp and implement new things quickly with good team communication.
+                                            He has the ability to grasp and implement new things quickly with good team
+                                            communication.
                                             At times he has worked hard and put extra hours to meet the deadline. "
                                         </p>
                                         <h5>Pranav Gore</h5>
@@ -385,7 +519,8 @@ I have done my BSC (Computer Science) from Pune University. Currently persuing m
 
                                 <div class="client-item">
                                     <div>
-                                        <p>"Satish has been sincerely committed to designing great UI and there open-sources work is always Use full for me"</p>
+                                        <p>"Satish has been sincerely committed to designing great UI and there
+                                            open-sources work is always Use full for me"</p>
                                         <h5>Smita Mishra</h5>
                                         <span>Full Stack Developer | BRS Indie Pvt. Ltd</span>
                                     </div>
@@ -394,141 +529,14 @@ I have done my BSC (Computer Science) from Pune University. Currently persuing m
                         </div>
                     </section>
 
-                    <!-- <section class="brand-client section-margin">
-                        <div class="container">
-                            <div class="one-title" data-dsn-animate="up">
-                                <div class="title-sub-container">
-                                    <p class="title-sub">Our clients</p>
-                                </div>
-                                <h2 class="title-main">Your successful, our reputation</h2>
-                            </div>
-
-                            <div class="wapper-client">
-                                <div class="logo-box">
-                                    <img src="assets/img/logo/1.png" alt="">
-
-                                    <div class="info">
-                                        <div class="content">
-                                            <div class="icon">
-                                                <i class="fas fa-plus"></i>
-                                            </div>
-
-                                            <div class="entry">
-                                                <div>
-                                                    <h5>Google</h5>
-                                                    <a href="#">www.google.com</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="logo-box">
-                                    <img src="assets/img/logo/2.png" alt="">
-
-                                    <div class="info">
-                                        <div class="content">
-                                            <div class="icon">
-                                                <i class="fas fa-plus"></i>
-                                            </div>
-
-                                            <div class="entry">
-                                                <div>
-                                                    <h5>Google</h5>
-                                                    <a href="#">www.google.com</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="logo-box">
-                                    <img src="assets/img/logo/3.png" alt="">
-
-                                    <div class="info">
-                                        <div class="content">
-                                            <div class="icon">
-                                                <i class="fas fa-plus"></i>
-                                            </div>
-
-                                            <div class="entry">
-                                                <div>
-                                                    <h5>Google</h5>
-                                                    <a href="#">www.google.com</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="logo-box">
-                                    <img src="assets/img/logo/4.png" alt="">
-
-                                    <div class="info">
-                                        <div class="content">
-                                            <div class="icon">
-                                                <i class="fas fa-plus"></i>
-                                            </div>
-
-                                            <div class="entry">
-                                                <div>
-                                                    <h5>Google</h5>
-                                                    <a href="#">www.google.com</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="logo-box">
-                                    <img src="assets/img/logo/5.png" alt="">
-
-                                    <div class="info">
-                                        <div class="content">
-                                            <div class="icon">
-                                                <i class="fas fa-plus"></i>
-                                            </div>
-
-                                            <div class="entry">
-                                                <div>
-                                                    <h5>Google</h5>
-                                                    <a href="#">www.google.com</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="logo-box">
-                                    <img src="assets/img/logo/6.png" alt="">
-
-                                    <div class="info">
-                                        <div class="content">
-                                            <div class="icon">
-                                                <i class="fas fa-plus"></i>
-                                            </div>
-
-                                            <div class="entry">
-                                                <div>
-                                                    <h5>Google</h5>
-                                                    <a href="#">www.google.com</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                </div> -->
+                </div>
 
                 <section class="contact-up section-margin section-padding">
                     <div class="container">
                         <div class="c-wapp">
-                            <a href="contact.html" class="effect-ajax">
+                            <a href="/contact" class="effect-ajax">
                                 <span class="hiring">
-                                    Hire Me....
+                                    You want to hire
                                 </span>
                                 <span class="career">
                                     Contact me immediately!
@@ -538,22 +546,82 @@ I have done my BSC (Computer Science) from Pune University. Currently persuing m
                     </div>
                 </section>
 
-                <footer>
-                    <div class="info">
-                        <div class="contact-footer">
-                          <!-- <a href="tel:010" class="phone image-zoom" data-dsn="parallax">012.345.6789</a> -->
-                          <a href="#" class="email image-zoom" data-dsn="parallax">umagol97@gmail.com</a>
-                        </div>
-                        <div class="copyright-social">
-                          <p>© 2021 Satish Umagol</p>
-                          <ul>
-                            <li class="image-zoom" data-dsn="parallax"><a href="https://github.com/umagol/" target="_blank">Github</a></li>
-                            <li class="image-zoom" data-dsn="parallax"><a href="https://twitter.com/umagolsatish" target="_blank">twitter</a></li>
-                            <li class="image-zoom" data-dsn="parallax"><a href="https://in.linkedin.com/in/satish-umagol-73b623172" target="_blank">Linkedin</a></li>
-                          </ul>
+               
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-links p-relative">
+                        <div class="row">
+                            <div class="col-md-3 dsn-col-footer">
+                                <div class="footer-block">
+                                    <div class="footer-logo">
+                                        <a href="/index"><img src="assets/img/logo.png" alt=""></a>
+                                    </div>
+
+                                    <div class="footer-social">
+
+                                        <ul>
+                                            <li><a href="https://m.facebook.com/people/Satish-Umagol/100008101153266"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="https://github.com/umagol"><i class="fab fa-github"></i></a></li>
+                                            <li><a href="https://www.instagram.com/satishumagol"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="https://twitter.com/umagolsatish"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/satish-umagol-73b623172/"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="https://github.com/umagol"><i class="fab fa-medium"></i></a></li>
+                                            <li><a href="https://stackoverflow.com/users/13600516/satish-umagol"><i class="fab fa-stack-overflow"></i></a></li>
+                                            <li><a href="https://www.npmjs.com/~satishumagol"><i class="fab fa-npm"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/satish-umagol-73b623172/"><i class="fab fa-discord"></i></a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 dsn-col-footer">
+                                <div class="footer-block col-menu">
+                                    <h4 class="footer-title">Navigation</h4>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="/projects">Project</a></li>
+                                            <li><a href="/designs">Designs</a></li>
+                                            <li><a href="/about">About</a></li>
+                                            <li><a href="/contact">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 dsn-col-footer">
+                                <div class="footer-block col-contact">
+                                    <h4 class="footer-title">Contact</h4>
+                                    <p><strong>T</strong> <span>:</span> +91-9970760326 </p>
+                                    <p class="over-hidden"><strong>E</strong> <span>:</span><a class="link-hover"
+                                            data-hover-text="umagol97@gmail.com" href="mailto:umagol97@gmail.com">umagol97@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 dsn-col-footer">
+                                <div class="col-address">
+                                    <h4 class="footer-title">Address</h4>
+
+                                    <p>Kothrud Depoth<br>
+                                        Pune, Maharashtra<br>
+                                        India - 411038</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </footer>
+
+                    <div class="copyright">
+                        <div class="text-center">
+                            <p>© 2022 Satish Umagol | Portfolio</p>
+                            <div class="copright-text over-hidden">Designed by <a class="link-hover"
+                                    data-hover-text="DSN Grid" href="https://umagol.github.io/" target="_blank">Satish Umagol</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
             </div>
         </div>
 
@@ -591,8 +659,29 @@ I have done my BSC (Computer Science) from Pune University. Currently persuing m
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/dsn-grid.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script> 
+        $(function(){
+          $("#footer").load("layout/footer.md"); 
+        });
+        function playMusic(){
+            document.getElementById("audio").play();
+            var play = document.getElementById("play");
+            var pause = document.getElementById("pause");
+            play.style.display = "none";
+            pause.style.display = "block";
+
+        }
+        function pauseMusic(){
+            document.getElementById("audio").pause();
+            var play = document.getElementById("play");
+            var pause = document.getElementById("pause");
+            play.style.display = "block";
+            pause.style.display = "none";
+        }
+    </script>
 </body>
 
 
-<!-- Mirrored from theme.dsngrid.com/droow/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Dec 2021 07:16:15 GMT -->
+<!-- Mirrored from theme.dsngrid.com/Satish Umagol/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jun 2022 04:27:23 GMT -->
+
 </html>

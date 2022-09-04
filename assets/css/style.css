@@ -1,47 +1,4 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------
-
-  Template Name: Droow - Ajax Portfolio Showcase HTML Template
-  Template URI: http://theme.dsngrid.com/droow
-  Description: Droow Ajax Portfolio Showcase HTML Template
-  Author: design_grid
-  Author URI: https://themeforest.net/user/design_grid
-  Version: 1.0.0
-
--------------------------------------------------------------*/
-/*-----------------------------------------------------------
-
-    1.  Variables
-    2.  Mixins
-      - Mixins Master
-      - Utilities
-    3.  Normalize
-    4.  Helpers
-    5. Typography
-      - Copy
-	  - Headings
-	6. Core
-    7. Navigation
-      - Links
-      - Menus
-	  - Next & Previous
-    8. Content
-      - pages
-      - Comments
-      - Archives
-      - Footer
-    9.Forms
-      - Button
-      - Fields
-    10.Blocks
-    11.Media
-      - captions
-    12.Version Light
-
--------------------------------------------------------------*/
-/* -------------------------------------------------------
-                     mixins
--------------------------------------------------------- */
 .post-full-content.single-post > *:not(.gallery),
 .post-full-content.single-post > *:not(.wp-block-quote) > p,
 .widget_text.single-post > *:not(.gallery),
@@ -5974,6 +5931,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index: 5;
 }
 
 .brand-client .wapper-client .logo-box .info .content .entry div {
@@ -5989,19 +5947,19 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   font-weight: 600;
 }
 
-.brand-client .wapper-client .logo-box .info .content:hover {
+.brand-client .wapper-client .logo-box .info .content:hover , .brand-client .wapper-client .logo-box .info .content:focus {
   width: 100%;
   height: 100%;
   border-radius: 0;
 }
 
-.brand-client .wapper-client .logo-box .info .content:hover .icon {
+.brand-client .wapper-client .logo-box .info .content:hover .icon , .brand-client .wapper-client .logo-box .info .content:focus .icon {
   display: none;
   opacity: 0;
   visibility: hidden;
 }
 
-.brand-client .wapper-client .logo-box .info .content:hover .entry {
+.brand-client .wapper-client .logo-box .info .content:hover .entry , .brand-client .wapper-client .logo-box .info .content:focus .entry {
   left: 0;
   top: 0;
   opacity: 1;
@@ -12562,4 +12520,16 @@ footer .copyright-social ul li:last-child {
   color: #000;
 }
 
+.text-white {
+  color: #fff;
+}
+.text-dark-contact {
+  color: black;
+}
+.form-success-message {
+  padding: 20px;
+  border: 1px solid rgb(245, 227, 227);
+  border-radius: 10px;
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
