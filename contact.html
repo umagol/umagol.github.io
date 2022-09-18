@@ -226,7 +226,8 @@ Your browser does not support the audio element.
               <div class="col-lg-6">
                 <div class="form-box">
                   <h3>Write A Comment</h3>
-                  <form id="contact-form" class="form" action="https://api.staticforms.xyz/submit" method="post"  data-toggle="validator">
+                  <p id="my-form-status"></p>
+                  <form id="contact-form my-form"  class="form" action="https://formspree.io/f/mlevjobg" method="post"  data-toggle="validator">
                     <div id="form-status" class="messages form-success-message"></div>
                     <br/>
                     <br/>
@@ -261,11 +262,10 @@ Your browser does not support the audio element.
                       </div>
                       <input type="hidden" name="subject" value="Contact us from - umagol.github.io" />
                       <input type="hidden" name="replyTo" value="@">
-                      <input type="hidden" name="accessKey" value="a133a191-e7e3-4962-a222-98c80780d3d5">
                       <input type="hidden" name="redirectTo" value="https://umagol.github.io/contact?status=success">
 
                       <div class="image-zoom" data-dsn="parallax">
-                        <button type="submit">Send Message</button>
+                        <button id="my-form-button">Send Message</button>
                       </div>
                     </div>
                   </form>
@@ -433,7 +433,38 @@ Your browser does not support the audio element.
           pause.style.display = "none";
       }
       </script>
-
+<script>
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
 <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
